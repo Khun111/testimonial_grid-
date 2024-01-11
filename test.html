@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            grid-gap: 1em;
+            grid-template-areas: 
+            "a a b c"
+            "d e e c ";
+        }
+        .grid-item {
+            background-color: antiquewhite;
+        }
+        .grid-item1 {
+            grid-area: a;
+        }
+        .grid-item2 {
+            grid-area: b;
+        }
+        .grid-item3 {
+            grid-area: c;
+        }
+        .grid-item4 {
+            grid-area: d; 
+        }
+        .grid-item5 {
+            grid-area: e;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="grid-item grid-item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repudiandae
+            aliquam ut autem minima! Itaque cumque neque, recusandae consequuntur, suscipit, fugit magni a nobis
+            molestiae eum provident maiores sequi eos?</div>
+        <div class="grid-item grid-item2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ipsa doloremque
+            libero quibusdam accusamus laborum architecto fuga illo temporibus iusto tempore, laudantium omnis quam
+            magnam sed expedita doloribus dolor aspernatur?</div>
+        <div class="grid-item grid-item3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+            exercitationem in corrupti amet laudantium iusto possimus odit iure id veritatis, corporis cupiditate, sed
+            at quia! Nostrum odio rem nam suscipit!</div>
+        <div class="grid-item grid-item4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo odit quia eius
+            beatae odio modi aspernatur, quos reiciendis officia doloribus. Vel, aliquid a non nobis nam expedita autem
+            voluptatum iure.</div>
+        <div class="grid-item grid-item5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quae facere
+            nihil nobis dicta alias iste dolorem recusandae accusantium et blanditiis, quaerat ab accusamus a beatae qui
+            soluta optio totam!</div>
+    </div>
+</body>
+
+</html>
